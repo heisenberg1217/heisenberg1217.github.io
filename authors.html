@@ -1,0 +1,16 @@
+---
+layout: page
+title: Authors
+permalink: /authors/
+sitemap:
+  priority: 0.7
+---
+<ul>
+  {% for author in site.data.authors %}
+  <li>
+    <a href="/authors/{{ author.name }}">
+      {{ author.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
